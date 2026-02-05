@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/ui/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
+import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <ServicesGrid />
-      <div className="h-[200px]" /> {/* Spacer */}
+      <Contact />
     </main>
   );
 }
