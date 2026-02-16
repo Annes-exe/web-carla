@@ -21,7 +21,7 @@ export const Contact = () => {
         // Format: Hola Carla, me interesa agendar una consulta para el Lunes a las 09:00 AM
         const message = `Hola Carla, me interesa agendar una consulta para el ${selectedSlot.day} a las ${selectedSlot.time}.`;
         const encodedMessage = encodeURIComponent(message);
-        const phoneNumber = "584243830191";
+        const phoneNumber = "584243687685";
 
         window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
     };
@@ -69,7 +69,7 @@ export const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-serif font-bold text-gray-900 text-lg">Contacto Directo</h4>
-                                    <p className="text-gray-600">+58 412 123 4567</p>
+                                    <p className="text-gray-600">+58 424 383 0191</p>
                                     <p className="text-sm text-gray-500">Respondemos en menos de 24 horas.</p>
                                 </div>
                             </div>
