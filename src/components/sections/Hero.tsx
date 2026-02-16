@@ -63,7 +63,7 @@ export const Hero = () => {
                     >
                         <div className="flex items-center gap-4">
                             <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold text-xl">
-                                5+
+                                2+
                             </div>
                             <div>
                                 <p className="text-gray-900 font-bold leading-tight">Años de experiencia</p>
