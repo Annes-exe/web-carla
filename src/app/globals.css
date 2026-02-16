@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-cream: #F9F7F2;
+  --color-brand-sage: #8DA399;
+  --color-brand-ash: #7A899C;
+
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
+}
+
 @utility glass {
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
