@@ -14,22 +14,17 @@ const faqs: FAQItem[] = [
     {
         id: 1,
         question: "¿Cuánto dura cada sesión?",
-        answer: "Las sesiones tienen una duración de entre 45 y 60 minutos. Este tiempo está diseñado para trabajar profundamente en tus objetivos terapéuticos sin generar fatiga mental.",
+        answer: "Las sesiones tienen una duración de entre 45 y 90 minutos. Este tiempo está diseñado para trabajar profundamente en tus objetivos terapéuticos sin generar fatiga mental.",
     },
     {
         id: 2,
         question: "¿Atiendes presencial en Maracay o solo online?",
-        answer: "Ofrezco ambas modalidades. Atiendo de forma presencial en mi consultorio ubicado en la Av. Las Delicias (Centro Empresarial Europa) y también realizo consultas online a través de Google Meet o Zoom para pacientes fuera de la ciudad o del país.",
+        answer: "Ofrezco ambas modalidades. Atiendo de forma presencial en mi consultorio ubicado en el B. Independencia calle B, local 1 y también realizo consultas online a través de Google Meet o Zoom para pacientes fuera de la ciudad, fuera del país o que prefieran esta opción.",
     },
     {
         id: 3,
         question: "¿Trabajas con niños o solo con adultos?",
         answer: "Mi enfoque clínico está especializado en adultos y adolescentes. Para el tratamiento de niños, suelo referir a colegas especialistas en psicología infantil para garantizar la mejor atención posible para los pequeños.",
-    },
-    {
-        id: 4,
-        question: "¿Aceptas seguros médicos?",
-        answer: "Trabajo de manera particular (privada), pero puedo emitir informes y facturas fiscales para que tramites el reembolso con tu seguro médico si tu póliza lo permite.",
     },
 ];
 
