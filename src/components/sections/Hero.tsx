@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export const Hero = () => {
     return (
@@ -28,14 +29,14 @@ export const Hero = () => {
                         Un espacio seguro para tu crecimiento personal. Terapia profesional enfocada en ansiedad, autoestima y relaciones.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <button className="bg-brand-sage text-white px-8 py-3.5 rounded-full font-medium shadow-lg hover:shadow-xl hover:bg-[#7d938a] transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2 group cursor-pointer">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start relative z-20">
+                        <Link href="#contact" className="bg-brand-sage text-white px-8 py-3.5 rounded-full font-medium shadow-lg hover:shadow-xl hover:bg-[#7d938a] transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2 group cursor-pointer inline-flex">
                             Agendar Consulta
                             <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
-                        </button>
-                        <button className="bg-white text-gray-800 border border-gray-200 px-8 py-3.5 rounded-full font-medium shadow-sm hover:bg-gray-50 transition-all cursor-pointer">
+                        </Link>
+                        <Link href="#about" className="bg-white text-gray-800 border border-gray-200 px-8 py-3.5 rounded-full font-medium shadow-sm hover:bg-gray-50 transition-all cursor-pointer inline-flex items-center justify-center">
                             Conoce más
-                        </button>
+                        </Link>
                     </div>
                 </motion.div>
 

@@ -46,9 +46,9 @@ export const Navbar = () => {
                             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-brand-sage transition-all duration-300 group-hover:w-full" />
                         </Link>
                     ))}
-                    <button className="bg-brand-sage text-white px-6 py-2 rounded-full font-medium shadow-md hover:shadow-lg hover:bg-[#7d938a] transition-all transform hover:-translate-y-0.5 cursor-pointer active:scale-95">
+                    <Link href="#contact" className="inline-block relative z-50 bg-brand-sage text-white px-6 py-2 rounded-full font-medium shadow-md hover:shadow-lg hover:bg-[#7d938a] transition-all transform hover:-translate-y-0.5 cursor-pointer active:scale-95">
                         Reservar Cita
-                    </button>
+                    </Link>
                 </div>
 
                 {/* Mobile Toggle */}
@@ -81,9 +81,9 @@ export const Navbar = () => {
                                     {link.name}
                                 </Link>
                             ))}
-                            <button className="bg-brand-sage text-white px-8 py-3 rounded-full font-medium shadow-md w-3/4">
+                            <Link href="#contact" onClick={() => setIsOpen(false)} className="bg-brand-sage text-white px-8 py-3 rounded-full font-medium shadow-md w-3/4 text-center block mx-auto">
                                 Reservar Cita
-                            </button>
+                            </Link>
                         </div>
                     </motion.div>
                 )}
