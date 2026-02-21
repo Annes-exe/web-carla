@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calendar, Clock, Phone, MapPin } from "lucide-react";
+import { Calendar, Clock, Phone, MapPin, MessageCircle } from "lucide-react";
 
 const schedule = [
     { day: "Lunes", slots: ["09:00 AM", "11:00 AM", "03:00 PM"] },
@@ -16,10 +16,7 @@ export const Contact = () => {
     const [selectedSlot, setSelectedSlot] = useState<{ day: string; time: string } | null>(null);
 
     const handleWhatsAppRedirect = () => {
-        if (!selectedSlot) return;
-
-        // Format: Hola Carla, me interesa agendar una consulta para el Lunes a las 09:00 AM
-        const message = `Hola Carla, me interesa agendar una consulta para el ${selectedSlot.day} a las ${selectedSlot.time}.`;
+        const message = "Hola Carla, vi tu página web y me gustaría solicitar información sobre una consulta.";
         const encodedMessage = encodeURIComponent(message);
         const phoneNumber = "584243687685";
 
@@ -59,7 +56,7 @@ export const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-serif font-bold text-gray-900 text-lg">Consultorio Presencial</h4>
-                                    <p className="text-gray-600">Av. Las Delicias, Centro Empresarial Europa, Maracay, Aragua.</p>
+                                    <p className="text-gray-600">B. Independencia calle B, local 1, Maracay, Aragua</p>
                                 </div>
                             </div>
 
@@ -84,6 +81,7 @@ export const Contact = () => {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="bg-brand-cream/50 p-8 rounded-[2.5rem] border border-brand-sage/10 relative"
                     >
+                        {/* 
                         <div className="flex items-center gap-3 mb-8">
                             <Calendar className="text-brand-sage" size={24} />
                             <h3 className="font-serif font-bold text-2xl text-gray-900">Disponibilidad Semanal</h3>
@@ -116,7 +114,6 @@ export const Contact = () => {
                             ))}
                         </div>
 
-                        {/* Floating Action within the card */}
                         <AnimatePresence>
                             {selectedSlot && (
                                 <motion.div
@@ -143,6 +140,34 @@ export const Contact = () => {
                                 </motion.div>
                             )}
                         </AnimatePresence>
+                        */}
+
+                        <div className="flex flex-col gap-6 w-full">
+                            <div className="flex items-center gap-3">
+                                <MapPin className="text-brand-sage" size={24} />
+                                <h3 className="font-serif font-bold text-2xl text-gray-900">Ubicación</h3>
+                            </div>
+
+                            <div className="w-full h-72 rounded-2xl overflow-hidden shadow-sm border border-brand-sage/20">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.034801423552!2d-67.58163753879765!3d10.248032378442018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x773bb8a02558fb5%3A0xbc44c222b1351026!2sPsic%C3%B3logo%20en%20Maracay%2C%20Carla%20Alvarez%20%40psienestar!5e0!3m2!1ses-419!2sve!4v1771694009894!5m2!1ses-419!2sve"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen={true}
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                            </div>
+
+                            <button
+                                onClick={handleWhatsAppRedirect}
+                                className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-4 rounded-full font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer text-lg mt-2"
+                            >
+                                <MessageCircle size={24} />
+                                Escribir por WhatsApp
+                            </button>
+                        </div>
 
                     </motion.div>
                 </div>
