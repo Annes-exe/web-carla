@@ -15,15 +15,30 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Psicóloga Carla Alvarez | Bienestar y Crecimiento Personal",
-  description: "Consulta psicológica profesional con Carla Alvarez. Espacio seguro para tu crecimiento personal y bienestar mental, ansiedad, y terapia de pareja.",
+  title: "Psicóloga Carla Alvarez | Bienestar y Salud Mental en Maracay",
+  description: "Consulta psicológica profesional con Carla Alvarez en Maracay, Aragua. Terapia individual, de pareja y gestión de ansiedad. Agenda tu cita presencial u online.",
+  keywords: ["Psicóloga Maracay", "Terapia Aragua", "Salud Mental Venezuela", "Ansiedad", "Depresión", "Terapia de Pareja", "Psicólogo Online", "Carla Alvarez"],
+  authors: [{ name: "Carla Alvarez" }],
+  creator: "Carla Alvarez",
   openGraph: {
-    title: "Psicóloga Carla Alvarez | Bienestar Mental",
-    description: "Ayudándote a encontrar el equilibrio y la paz mental que necesitas.",
-    url: "https://web-carla.com", // Placeholder
+    title: "Psicóloga Carla Alvarez | Tu espacio de bienestar",
+    description: "Ayudándote a recuperar tu paz mental y equilibrio emocional. Terapia presencial en Maracay y consultas online.",
+    url: "https://psicologacarlaalvarez.com",
     siteName: "Psicóloga Carla Alvarez",
-    locale: "es_ES",
+    locale: "es_VE",
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg", // Placeholder
+        width: 1200,
+        height: 630,
+        alt: "Consultorio Psicóloga Carla Alvarez",
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
